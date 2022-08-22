@@ -25,7 +25,7 @@ function App() {
     currentTodo.push(completeditem[0])
     let newTodolist = currentTodo;
     setcurrentTodo(newTodolist);
-    setinitialrender("Re-render Card Component")
+    setinitialrender(<Card/>)
   }
 
   return (
