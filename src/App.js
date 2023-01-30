@@ -20,12 +20,10 @@ function App() {
   
   function modifydata(removedata){
     let completeditem = currentTodo.splice(currentTodo.indexOf(removedata),1)
-    //setcurrentTodo(currentTodo.push(completeditem[0]))
-    //console.log(currentTodo)
     currentTodo.push(completeditem[0])
     let newTodolist = currentTodo;
     setcurrentTodo(newTodolist);
-    setinitialrender(<Card/>)
+    setinitialrender(Math.random);
   }
 
   return (
